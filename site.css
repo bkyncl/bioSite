@@ -98,10 +98,10 @@ color:#593636 ;
       transform: translateX(-100%);
       transition: 0.3s;
   }
-  nav ul li{
+  .menu li{
       margin: 10px 0;
   }
-  nav ul li a{
+  .menu li a{
       display: block;
       font-size: 20px;
       padding: 15px 25px;
@@ -281,7 +281,7 @@ a.slide__next,
   color:rgba(215, 203, 203, 0.516);
 }
 /*media screen styling for slider effective below 768px*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   .slider {
   max-width: 85%;
   height: 250px;
@@ -399,14 +399,9 @@ a.slide__next,
   margin: 0;
   padding: 0;
 }
-.footer-center ul li {
-  position: relative;
-}
 .footer-center ul a {
   position: relative;
   display: inline-block;
-  text-decoration: none;
-  color: #fff;
   font-size: 10px;
 }
 .footer-center ul a::before {
@@ -453,9 +448,14 @@ a.slide__next,
   .footer-right {
     flex: 1;
     text-align: center;
-    margin: 10px 0;
+    margin: 0px;
+    padding: 5px;
   }
   .footer-left a {
     float: none;
+  }
+  .footer-center ul a {
+    margin: 0px;
+    padding: 5px;
   }
 }

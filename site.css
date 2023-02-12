@@ -140,7 +140,6 @@ color:#593636 ;
 }
 .button{
   font-size:18px;
-  text-transform: uppercase;
   display: inline-block;
   justify-content: center;
   font-weight: 400;
@@ -184,7 +183,6 @@ color:#593636 ;
   height: 400px;
   margin: 40px;
   text-align: center;
-
   border-radius: 5px;
   overflow: hidden;
   position: relative;
@@ -217,8 +215,8 @@ color:#593636 ;
 }
 .slide__text {
   font-size:30px;
-  padding-left: 50px;
-  padding-right: 30px;
+  padding: 60px;
+
 }
 .slide a {
   background: none;
@@ -271,9 +269,9 @@ a.slide__next,
   background-color: rgba(188, 170, 170, 0.516);
   margin: 0 15px 0 15px;
 }
-img {
+.slide img {
   height: 400px;
-  width: 400px;
+  width: 300px;
 }
 .links{
   text-decoration: none;
@@ -292,7 +290,7 @@ img {
   .slide {
   height: 250px;
   }
-  img {
+  .slide img {
   height: 250px;
   width: 240px;
   }
@@ -435,4 +433,22 @@ img {
 .contact-icons img {
   width: 20px;
   height: 20px;
+}
+@media only screen and (max-width: 767px) {
+  .footer {
+    flex-direction: column;
+  }
+  .separator {
+    display: none;
+  }
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    flex: 1;
+    text-align: center;
+    margin: 10px 0;
+  }
+  .footer-left a {
+    float: none;
+  }
 }

@@ -283,7 +283,7 @@ a.slide__next,
 /*media screen styling for slider effective below 768px*/
 @media only screen and (max-width: 768px) {
   .slider {
-  max-width: 80%;
+  max-width: 85%;
   height: 250px;
   margin: 20px;
   }
@@ -292,11 +292,11 @@ a.slide__next,
   }
   .slide img {
   height: 250px;
-  width: 150px;
+  width: 180px;
   }
   .slide__text {
   font-size: 18px;
-  padding: 50px;
+  padding: 40px;
   }
   .slider__nav {
   width: 150px;
@@ -307,6 +307,14 @@ a.slide__next,
     height: 10px;
     width: 10px;
   }
+  .slider::before,
+  .slider::after,
+  .slide__prev,
+  .slide__next {
+    width: 15px;
+    height: 15px;
+  }
+
 } 
 .main {
   background: linear-gradient(

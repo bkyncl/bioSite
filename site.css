@@ -292,12 +292,11 @@ a.slide__next,
   }
   .slide img {
   height: 250px;
-  width: 240px;
+  width: 150px;
   }
   .slide__text {
   font-size: 18px;
-  padding-left: 30px;
-  padding-right: 20px;
+  padding: 50px;
   }
   .slider__nav {
   width: 150px;

@@ -413,7 +413,6 @@ article {
 }
 .button {
   text-align: center;
-  width: 200px;
 }
 .gallery:nth-child(odd) .button:hover {
   background-color: #39303d;
@@ -470,13 +469,9 @@ article {
   #img-head {
     font-size: 24px;
   }
-  /* .button {
-    text-align: center;
-    width: 120px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 16px;
-  } */
+  .button {
+    width: 200px;
+  }
   .gallery:nth-child(odd) .button:hover {
     background-color: #39303d;
     color: #fff;

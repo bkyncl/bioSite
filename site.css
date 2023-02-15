@@ -3,7 +3,6 @@
   padding: 0;
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
   line-height:1.6;
 }
 .navheader{
@@ -321,7 +320,7 @@ a.slide__next,
   overflow:hidden;
   background-size:cover;
   background-position:center;
-  height:80vh;
+  height:90vh;
 }
 .scene blockquote {
   font-family: 'Roboto-Slab', serif;
@@ -342,64 +341,146 @@ a.slide__next,
     height: 60vh;
   }
 }
-.main {
-  background: linear-gradient(
-    149deg,
-    #191726 20%,
-    #593636 100%
-  );
+.flex-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+}
+.bio h1{
+  margin-top: 60px;
+  text-transform: uppercase;
+  font-weight: 300;
   color:#fff
 }
-.layout-container {
-  margin: 10%;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-gap: 40px;
+.bio {
+  width: 100%;
+  overflow: hidden;
+  background-color: #191726;
+  padding: 0px 60px 0px 60px;
 }
-
-.left-col {
-  grid-column: 1 / 2;
-  grid-row: 1 / 4;
-  background-color: #323232;
+#bio-pic {
+  float: left;
+  margin: 70px 60px 20px 50px;
+}
+#bio-pic img {
+  width: 400px;
+  height: 400px;
+}
+article {
+  text-align: justify;
+  padding: 20px 60px 60px 60px;
+  color: #fff;
+}
+.gallery img{
+  height: 450px;
+  width: 350px;
+}
+.gallery {
+  background-color: #39303d;
+  color: #fff;
+  padding: 60px 40px 60px 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+.gallery:nth-child(odd) {
+  background-color: #191726;
+  flex-direction: row-reverse;
+}
+.sub-gally {
   padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.gallery img {
-  height: 300px;
-  width: 250px;
-  float: left;
-  margin-right: 20px;
-  border:#07070d 5px solid;
+.gallery p {
+  padding-bottom: 50px;
+  padding-top: 30px;
+  text-align: center;
+  width: 260px;
 }
-.gallery-aside img {
-  height: 300px;
-  width: 250px;
-  float: left;
-  margin-right: 20px;
-  border:#07070d 5px solid;
+#prof-bio {
+  width: 500px;
+  text-align: center;
+  padding-top: 40px;
 }
-.top-right-row {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-  background-color: #323232;
-  padding: 1rem;
+#img-head {
+  text-transform: uppercase;
+  font-weight: 300;
+  color:#fff
 }
-
-.middle-right-row {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-  background-color: #323232;
-  padding: 1rem;
+.button {
+  text-align: center;
+  width: 200px;
 }
-
-.bottom-right-row {
-  grid-column: 2 / 3;
-  grid-row: 3 / 4;
-  background-color: #323232;
-  padding: 1rem;
+.gallery:nth-child(odd) .button:hover {
+  background-color: #39303d;
+  color: #fff;
+}
+/*media screen styling for main content effective below 768px*/
+@media only screen and (max-width: 768px) {
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .bio h1 {
+    margin-top: 30px;
+    font-size: 24px;
+  }
+  .bio {
+    padding: 0px 20px 0px 20px;
+  }
+  #bio-pic {
+    margin: 30px 20px 20px 20px;
+  }
+  #bio-pic img {
+    width: 100%;
+    height: auto;
+  }
+  article {
+    padding: 20px;
+  }
+  .gallery img {
+    height: auto;
+    width: 70%;
+  }
+  .gallery {
+    padding: 30px 20px 30px 20px;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+    gap: 10px;
+  }
+  .gallery:nth-child(odd) {
+    flex-direction: column;
+  }
+  .sub-gally {
+    padding: 20px;
+  }
+  .gallery p {
+    padding-bottom: 30px;
+    width: 100%;
+  }
+  #prof-bio {
+    width: 100%;
+    padding-top: 20px;
+  }
+  #img-head {
+    font-size: 24px;
+  }
+  /* .button {
+    text-align: center;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+  } */
+  .gallery:nth-child(odd) .button:hover {
+    background-color: #39303d;
+    color: #fff;
+  }
 }
 .footer {
   width: 100%;
@@ -469,6 +550,7 @@ a.slide__next,
   width: 25px;
   height: 25px;
 }
+/*media screen styling for footer effective below 768px*/
 @media only screen and (max-width: 768px) {
   .footer {
     flex-direction: column;

@@ -214,9 +214,8 @@ color:#593636 ;
   transform: scale(1);
 }
 .slide__text {
-  font-size:30px;
-  padding: 60px;
-
+  font-size:25px;
+  padding: 90px;
 }
 .slide a {
   background: none;
@@ -281,7 +280,7 @@ a.slide__next,
   color:rgba(215, 203, 203, 0.516);
 }
 /*media screen styling for slider effective below 768px*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 680px) {
   .slider {
   max-width: 85%;
   height: 250px;
@@ -296,7 +295,7 @@ a.slide__next,
   }
   .slide__text {
   font-size: 18px;
-  padding: 40px;
+  padding: 60px;
   }
   .slider__nav {
   width: 150px;

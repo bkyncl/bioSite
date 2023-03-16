@@ -428,7 +428,7 @@ article {
   }
   .bio h1 {
     margin-top: 30px;
-    font-size: 24px;
+    font-size: 18px;
   }
   .bio {
     padding: 0px 20px 0px 20px;
@@ -448,8 +448,8 @@ article {
     width: 300px;
   }
   .hobby-gally img {
-    height: 320px;
-    width: 220px;
+    height: 260px;
+    width: 170px;
   }
   #prof-bio {
     width: 100%;
@@ -457,6 +457,7 @@ article {
   }
   .img-head {
     font-size: 24px;
+    text-align: center;
   }
   .button {
     width: 200px;
